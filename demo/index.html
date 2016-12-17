@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+  <title>wt-header demo</title>
+  <script src="../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  <link rel="import" href="../bower_components/iron-demo-helpers/demo-pages-shared-styles.html">
+  <link rel="import" href="../bower_components/iron-demo-helpers/demo-snippet.html">
+  <link rel="import" href="../wt-header.html">
+  <style is="custom-style" include="demo-pages-shared-styles">
+    wt-header {
+      --app-primary-color: deepskyblue;
+      --container-color: white;
+      --menu-text-color: white;
+      --app-drawer-color: midnightblue;
+      --menu-selection-color: yellow;
+    }
+  </style>
+</head>
+
+<body>
+
+  <wt-header id="wtheader" container="search" logoUrl="https://www.waiin.com/wp-content/uploads/2016/04/waiin@1x2-1.png" responsivness="min-width:500px">
+    <wt-tabs>
+      <wt-tab name="Home" action="/home.html" target="iframe1"></wt-tab>
+      <wt-tab name="products" action="/products.html" target="iframe1"></wt-tab>
+      <wt-tab name="Account" action="/Account.html" target="iframe1"></wt-tab>
+      <wt-tab name="business" action="/business.html" target="iframe1"></wt-tab>
+      <wt-tab name="about-us" action="/about-us.html" target="iframe1"></wt-tab>
+      <wt-tab name="business1" action="/business.html" target="iframe1"></wt-tab>
+      <wt-tab name="about-us1" action="/about-us.html" target="iframe1"></wt-tab>
+      <wt-tab name="business2" action="/business.html" target="iframe1"></wt-tab>
+      <wt-tab name="about-us2" action="/about-us.html" target="iframe1"></wt-tab>
+      <wt-tab name="business3" action="/business.html" target="iframe1"></wt-tab>
+      <wt-tab name="about-us3" action="/about-us.html" target="iframe1"></wt-tab>
+      <wt-tab name="business1" action="/business.html" target="iframe1"></wt-tab>
+      <wt-tab name="about-us1" action="/about-us.html" target="iframe1"></wt-tab>
+      <wt-tab name="business2" action="/business.html" target="iframe1"></wt-tab>
+      <wt-tab name="about-us2" action="/about-us.html" target="iframe1"></wt-tab>
+      <wt-tab name="business3" action="/business.html" target="iframe1"></wt-tab>
+      <wt-tab name="about-us3" action="/about-us.html" target="iframe1"></wt-tab>
+      <wt-tab name="business4" action="/business.html" target="iframe1"></wt-tab>
+      <wt-tab name="about-us4" action="/about-us.html" target="iframe1"></wt-tab>
+      <wt-tab name="business5" action="/business.html" target="iframe1"></wt-tab>
+      <wt-tab name="about-us5" action="/about-us.html" target="iframe1"></wt-tab>
+      <wt-tab name="business6" action="/business.html" target="iframe1"></wt-tab>
+      <wt-tab name="about-us6" action="/about-us.html" target="iframe1"></wt-tab>
+    </wt-tabs>
+  </wt-header>
+
+  <iframe height=545px width=100% name="iframe1" src="/home.html">
+  </iframe>
+
+</body>
+</html>

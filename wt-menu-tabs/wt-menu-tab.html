@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="https://polygit.org/components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="https://polygit.org/components/polymer/polymer.html" />
+</head>
+<body>
+<dom-module id="wt-menu-tab">
+    <style>
+        :host::content li.list {
+            background-color:red;
+        }
+    </style>
+    <template>
+        <!--<li id="item1" class="list">{{menu}}</li>-->
+        <div id="items">
+            <content></content>
+        </div>
+    </template>
+</dom-module>
+</body>
+</html>
+<script>
+    Polymer({
+        is: "wt-menu-tab",
+        properties: {
+            /**
+       * An array containing items determining how many instances of the template
+       * to stamp and that that each template instance should bind to.
+       */
+            items: {
+                type: Array
+            },
+            /**
+       * The max count of physical items the pool can extend to.
+       */
+            maxPhysicalCount: {
+                type: Number,
+                value:500
+            },
+            /**
+      * The name of the variable to add to the binding scope for the array
+      * element associated with a given template instance.
+      */
+            as: {
+        type: String,
+        value: 'item'
+    },
+        }
+    })
+</script>

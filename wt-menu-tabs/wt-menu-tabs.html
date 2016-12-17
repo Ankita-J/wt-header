@@ -1,0 +1,32 @@
+<head>
+    <script src="https://polygit.org/components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="https://polygit.org/components/polymer/polymer.html" />
+    <link rel="import" href="wt-menu-tab.html" />
+</head>
+<body>
+    <dom-module id="wt-menu-tabs">
+        <style>
+            :host::content ul.navigation {
+                background-color:yellow;
+                display:inline-block;
+                border:1px;
+                height:50px;
+                width:100%;
+                list-style-type:none;
+            }
+        </style>
+        <template>
+            <ul class="navigation">
+                <!--<template is="dom-repeat" id="manul" items="{{menus}}">
+                    <wt-menu-tab></wt-menu-tab>
+                </template>-->
+                <wt-menu-tab></wt-menu-tab>
+            </ul>
+        </template>
+    </dom-module>
+</body>
+<script>
+    Polymer({
+        is:"wt-menu-tabs"
+    })
+</script>
